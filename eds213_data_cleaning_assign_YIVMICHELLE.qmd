@@ -2,12 +2,18 @@
 title: "eds213 Data Cleaning assignment"
 author: Michelle Yiv
 format: html
-editor: visual
 ---
 
 ## Background
 
 Data about shorebird ecology and the environment were collected from 16 field sites in Alaska, Canada, and Russia from 1993-2014
+
+```{r}
+library(naniar)
+
+snowsurvey_csv %>% 
+  miss_var_summary()
+```
 
 ## Setup: Load libraries and read in data
 
